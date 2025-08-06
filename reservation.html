@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" class="font_Montserrat">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reservation-PATO</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+        <link rel="shortcut icon" href="./favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="./favicon/site.webmanifest" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+            integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+        />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./assets/styles/grid.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <header id="header"></header>
+        <script>
+            fetch('./template/header.html')
+                .then((response) => response.text())
+                .then((data) => {
+                    document.getElementById('header').innerHTML = data;
+                });
+        </script>
+        <section
+            class="bg-[url('https://preview.colorlib.com/theme/pato/images/bg-title-page-02.jpg')] bg-center min-h-[545px] flex items-center justify-center pt-[160px] pb-[80px]"
+        >
+            <h2
+                class="font_Poppins font-[700] text-[30px] sm:text-[50px] text-white uppercase tracking-[6px] text-center"
+            >
+                Reservation
+            </h2>
+        </section>
+        <div class="bg-[#f1f1f1] pt-[100px] pb-[110px]">
+            <div class="max-w-[870px] mx-auto pb-[30px]">
+                <div class="row items-center gap-12 lg:gap-0">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <p class="font_Courgette text-[30px] text-[#d61c22] leading-[1.2] font-[400] text-center">
+                            Reservation
+                        </p>
+                        <h3
+                            class="font-[700] text-[48px] sm:text-[50px] leading-[1.2] text-[#222222] tracking-[6px] mt-[5px] mb-[35px] uppercase font_Poppins text-center"
+                        >
+                            Book table
+                        </h3>
+                        <form action="" autocomplete="off" class="px-3 sm:px-0">
+                            <div class="row row-cols-sm-1 row-cols-md-3 gap-x-[30px] gap-y-0 sm:gap-y-[23px]">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="" class="w-full">
+                                            Date
+                                            <input
+                                                type="date"
+                                                name=""
+                                                id=""
+                                                class="block rounded-[10px] text-[14px] text-[#666666] border-2 border-solid border-[#d9d9d9] w-full h-[50px] px-3 py-2 mt-[3px] mb-[23px]"
+                                            />
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="w-full">
+                                            Name
+                                            <input
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                placeholder="Name"
+                                                class="block rounded-[10px] text-[14px] text-[#666666] border-2 border-solid border-[#d9d9d9] w-full h-[50px] px-3 py-2 mt-[3px] mb-[23px]"
+                                                required
+                                            />
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="" class="w-full">
+                                            Time
+                                            <div
+                                                class="rounded-[10px] text-[14px] text-[#666666] border-2 border-solid border-[#d9d9d9] w-full h-[50px] px-3 py-2 mt-[3px] mb-[23px]"
+                                            >
+                                                <select name="" id="" class="pl-2 pr-5 cursor-pointer">
+                                                    <option value="">9:00</option>
+                                                    <option value="">9:30</option>
+                                                    <option value="">10:00</option>
+                                                    <option value="">10:30</option>
+                                                    <option value="">11:00</option>
+                                                    <option value="">11:30</option>
+                                                    <option value="">12:00</option>
+                                                    <option value="">12:30</option>
+                                                    <option value="">13:00</option>
+                                                    <option value="">13:30</option>
+                                                    <option value="">14:00</option>
+                                                    <option value="">14:30</option>
+                                                    <option value="">15:00</option>
+                                                    <option value="">15:30</option>
+                                                    <option value="">14:00</option>
+                                                    <option value="">14:30</option>
+                                                    <option value="">15:00</option>
+                                                    <option value="">15:30</option>
+                                                    <option value="">16:00</option>
+                                                </select>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="" class="w-full">
+                                            Phone
+                                            <input
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                placeholder="Phone"
+                                                class="block rounded-[10px] text-[14px] text-[#666666] border-2 border-solid border-[#d9d9d9] w-full h-[50px] px-3 py-2 mt-[3px] mb-[23px]"
+                                                required
+                                            />
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="" class="w-full">
+                                            People
+                                            <div
+                                                class="rounded-[10px] text-[14px] text-[#666666] border-2 border-solid border-[#d9d9d9] w-full h-[50px] px-3 py-2 mt-[3px] mb-[23px]"
+                                            >
+                                                <select name="" id="" class="pl-2 pr-5 cursor-pointer">
+                                                    <option value="">1 person</option>
+                                                    <option value="">2 people</option>
+                                                    <option value="">3 people</option>
+                                                    <option value="">4 people</option>
+                                                    <option value="">5 people</option>
+                                                    <option value="">6 people</option>
+                                                    <option value="">7 people</option>
+                                                    <option value="">8 people</option>
+                                                    <option value="">9 people</option>
+                                                    <option value="">10 people</option>
+                                                    <option value="">11 people</option>
+                                                    <option value="">12 people</option>
+                                                </select>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="w-full">
+                                            Email
+                                            <input
+                                                type="email"
+                                                name=""
+                                                id=""
+                                                placeholder="Email"
+                                                class="block rounded-[10px] text-[14px] text-[#666666] border-2 border-solid border-[#d9d9d9] w-full h-[50px] px-3 py-2 mt-[3px] mb-[23px]"
+                                                required
+                                            />
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex justify-center">
+                                <button class="btn-primary" type="submit">Book Table</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-[80px]">
+                <div class="container">
+                    <div class="row gap-[40px] lg:gap-0">
+                        <div class="col-lg-12 col-xl-6">
+                            <h4
+                                class="font_Poppins font-[500] text-[22px] text-[#333] uppercase tracking-[3px] mb-[18px]"
+                            >
+                                Reserve by Phone
+                            </h4>
+                            <p class="text-[15px] leading-[1.7] text-[#666]">
+                                Donec quis euismod purus. Donec feugiat ligula rhoncus, varius nisl sed, tincidunt
+                                lectus. <span class="text-[#222]">Nulla vulputate</span> , lectus vel volutpat
+                                efficitur, orci <span class="text-[#222]">lacus sodales</span> sem, sit amet quam:
+                                <span class="text-[#ec1d25]">(001) 345 6889</span>
+                            </p>
+                        </div>
+                        <div class="col-lg-12 col-xl-6">
+                            <h4
+                                class="font_Poppins font-[500] text-[22px] text-[#333] uppercase tracking-[3px] mb-[18px]"
+                            >
+                                For Event Booking
+                            </h4>
+                            <p class="text-[15px] leading-[1.7] text-[#666]">
+                                Donec feugiat ligula rhoncus: <span class="text-[#ec1d25]">(001) 345 6889</span> ,
+                                varius nisl sed, tinci-dunt lectus sodales sem.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer"></footer>
+        <script>
+            fetch('./template/footer.html')
+                .then((response) => response.text())
+                .then((data) => {
+                    document.getElementById('footer').innerHTML = data;
+                    const scroll = document.getElementById('scroll');
+                    window.addEventListener('scroll', () => {
+                        const scrollTop = document.documentElement.scrollTop;
+                        if (scrollTop > 300) {
+                            scroll.classList.remove('hidden');
+                            scroll.classList.add('fixed');
+                        } else {
+                            scroll.classList.remove('fixed');
+                            scroll.classList.add('hidden');
+                        }
+                    });
+                });
+        </script>
+        <button
+            class="bg-[#b2b2b2] py-[6px] px-2 rounded-[4px] text-white hidden bottom-[40px] right-[40px] hover:bg-[#ec1d25]"
+            id="scroll"
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+        >
+            <i class="fa-solid fa-angles-up"></i>
+        </button>
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+            integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="./index.js"></script>
+    </body>
+</html>

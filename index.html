@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en" class="font_Montserrat">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home-PATO</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+        <link rel="shortcut icon" href="./favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="./favicon/site.webmanifest" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+            integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+        />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./assets/styles/grid.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <header class="header lg:fixed lg:top-0 lg:left-0 border-t-4 border-solid border-[#ec1d25]">
+            <div class="container">
+                <div class="textHeader flex items-center justify-between text-[#fff] py-6">
+                    <a href="index.html">
+                        <img
+                            class="logo1 w-[99px] lg:w-full"
+                            src="https://preview.colorlib.com/theme/pato/images/icons/logo.png"
+                            alt=""
+                        />
+                        <img
+                            class="logo2 hidden"
+                            src="https://preview.colorlib.com/theme/pato/images/icons/logo2.png"
+                            alt=""
+                        />
+                    </a>
+                    <nav class="hidden lg:block">
+                        <ul class="flex">
+                            <li class="mx-[20px] hover:text-[#ec1d25]">
+                                <a href="index.html" class="py-[15px] text-[14px] inline-block"> HOME </a>
+                            </li>
+                            <li class="mx-[20px] hover:text-[#ec1d25]">
+                                <a href="./menu.html" class="py-[15px] text-[14px] inline-block"> MENU </a>
+                            </li>
+                            <li class="mx-[20px] hover:text-[#ec1d25]">
+                                <a href="#!" class="py-[15px] text-[14px] inline-block"> RESERVATION </a>
+                            </li>
+                            <li class="mx-[20px] hover:text-[#ec1d25]">
+                                <a href="#!" class="py-[15px] text-[14px] inline-block">GALLERY</a>
+                            </li>
+                            <li class="mx-[20px] hover:text-[#ec1d25]">
+                                <a href="#!" class="py-[15px] text-[14px] inline-block">ABOUT</a>
+                            </li>
+                            <li class="mx-[20px] hover:text-[#ec1d25]">
+                                <a href="#!" class="py-[15px] text-[14px] inline-block">BLOG</a>
+                            </li>
+                            <li class="mx-[20px] hover:text-[#ec1d25]">
+                                <a href="#!" class="py-[15px] text-[14px] inline-block">CONTACT</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="flex gap-4 items-center">
+                        <a href="#!" class="hover:text-[#ec1d25]">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#!" class="hover:text-[#ec1d25]"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#!" class="hover:text-[#ec1d25]"><i class="fa-brands fa-twitter"></i></a>
+                        <button
+                            class="text-[20px] hover:text-[#ec1d25]"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight"
+                        >
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <div
+                            class="offcanvas offcanvas-end max-h-[100vh] overflow-auto !w-[60%] lg:!w-[384px]"
+                            tabindex="-1"
+                            id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel"
+                        >
+                            <div class="py-[70px] flex flex-col items-center text-center">
+                                <nav>
+                                    <ul>
+                                        <li class="mx-[20px] hover:text-[#ec1d25] mb-[13px]">
+                                            <a href="index.html" class="text-[14px] inline-block"> HOME </a>
+                                        </li>
+                                        <li class="mx-[20px] hover:text-[#ec1d25] mb-[13px]">
+                                            <a href="./menu.html" class="text-[14px] inline-block"> MENU </a>
+                                        </li>
+                                        <li class="mx-[20px] hover:text-[#ec1d25] mb-[13px]">
+                                            <a href="#!" class="text-[14px] inline-block"> RESERVATION </a>
+                                        </li>
+                                        <li class="mx-[20px] hover:text-[#ec1d25] mb-[13px]">
+                                            <a href="#!" class="text-[14px] inline-block">GALLERY</a>
+                                        </li>
+                                        <li class="mx-[20px] hover:text-[#ec1d25] mb-[13px]">
+                                            <a href="#!" class="text-[14px] inline-block">ABOUT</a>
+                                        </li>
+                                        <li class="mx-[20px] hover:text-[#ec1d25] mb-[13px]">
+                                            <a href="#!" class="text-[14px] inline-block">BLOG</a>
+                                        </li>
+                                        <li class="mx-[20px] hover:text-[#ec1d25] mb-[13px]">
+                                            <a href="#!" class="text-[14px] inline-block">CONTACT</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <button class="btn-primary">Reservation</button>
+                            </div>
+                            <div class="px-[60px] pb-10">
+                                <h4
+                                    class="font_Poppins font-[500] text-[18px] text-[#222] uppercase tracking-[2px] mb-[33px] text-center"
+                                >
+                                    Gallery
+                                </h4>
+                                <div class="flex flex-wrap gap-[10px]">
+                                    <a
+                                        href="https://preview.colorlib.com/theme/pato/images/photo-gallery-01.jpg"
+                                        style="width: calc((100% - 20px) / 3)"
+                                    >
+                                        <img
+                                            src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-01.jpg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a
+                                        href="https://preview.colorlib.com/theme/pato/images/photo-gallery-02.jpg"
+                                        style="width: calc((100% - 20px) / 3)"
+                                    >
+                                        <img
+                                            src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-02.jpg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a
+                                        href="https://preview.colorlib.com/theme/pato/images/photo-gallery-03.jpg"
+                                        style="width: calc((100% - 20px) / 3)"
+                                    >
+                                        <img
+                                            src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-03.jpg"
+                                            alt=""
+                                        />
+                                    </a>
+
+                                    <a
+                                        href="https://preview.colorlib.com/theme/pato/images/photo-gallery-05.jpg"
+                                        style="width: calc((100% - 20px) / 3)"
+                                    >
+                                        <img
+                                            src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-05.jpg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a
+                                        href="https://preview.colorlib.com/theme/pato/images/photo-gallery-06.jpg"
+                                        style="width: calc((100% - 20px) / 3)"
+                                    >
+                                        <img
+                                            src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-06.jpg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a
+                                        href="https://preview.colorlib.com/theme/pato/images/photo-gallery-07.jpg"
+                                        style="width: calc((100% - 20px) / 3)"
+                                    >
+                                        <img
+                                            src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-07.jpg"
+                                            alt=""
+                                        />
+                                    </a>
+
+                                    <a
+                                        href="https://preview.colorlib.com/theme/pato/images/photo-gallery-09.jpg"
+                                        style="width: calc((100% - 20px) / 3)"
+                                    >
+                                        <img
+                                            src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-09.jpg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a
+                                        href="https://preview.colorlib.com/theme/pato/images/photo-gallery-10.jpg"
+                                        style="width: calc((100% - 20px) / 3)"
+                                    >
+                                        <img
+                                            src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-10.jpg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a
+                                        href="https://preview.colorlib.com/theme/pato/images/photo-gallery-11.jpg"
+                                        style="width: calc((100% - 20px) / 3)"
+                                    >
+                                        <img
+                                            src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-11.jpg"
+                                            alt=""
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="autoplay text-white">
+            <div class="relative">
+                <img
+                    src="https://preview.colorlib.com/theme/pato/images/slide1-01.jpg"
+                    alt=""
+                    class="h-[100vh] w-full object-cover"
+                />
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+                    <span
+                        class="font_Courgette text-[42px] sm:text-[60px] leading-[1.1] mb-[15px]"
+                        data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500"
+                    >
+                        Welcome to
+                    </span>
+                    <h2
+                        class="font_Poppins font-[700] text-[60px] sm:text-[70px] lg:text-[90px] leading-[1.1] tracking-[10px] mb-[37px]"
+                        data-aos="fade-up"
+                        data-aos-duration="3000"
+                    >
+                        Pato Place
+                    </h2>
+                    <button
+                        class="font-[400] text-[12px] leading-[1.1] text-[#ec1d25] py-[10px] px-4 bg-white rounded-[10px]"
+                    >
+                        <a href="./menu.html"> LOOK MENU </a>
+                    </button>
+                </div>
+            </div>
+            <div class="relative">
+                <img
+                    src="https://preview.colorlib.com/theme/pato/images/master-slides-02.jpg"
+                    alt=""
+                    class="h-[100vh] w-full object-cover"
+                />
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+                    <span
+                        class="font_Courgette text-[42px] sm:text-[60px] leading-[1.1] mb-[15px]"
+                        data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500"
+                    >
+                        Welcome to
+                    </span>
+                    <h2
+                        class="font_Poppins font-[700] text-[60px] sm:text-[70px] lg:text-[90px] leading-[1.1] tracking-[10px] mb-[37px] uppercase"
+                        data-aos="fade-up"
+                        data-aos-duration="3000"
+                    >
+                        Pato Place
+                    </h2>
+                    <button
+                        class="font-[400] text-[12px] leading-[1.1] text-[#ec1d25] py-[10px] px-4 bg-white rounded-[10px]"
+                    >
+                        <a href="#!"> LOOK MENU </a>
+                    </button>
+                </div>
+            </div>
+            <div class="relative">
+                <img
+                    src="https://preview.colorlib.com/theme/pato/images/master-slides-01.jpg"
+                    alt=""
+                    class="h-[100vh] w-full object-cover"
+                />
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
+                    <span
+                        class="font_Courgette text-[42px] sm:text-[60px] leading-[1.1] mb-[15px]"
+                        data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500"
+                    >
+                        Welcome to
+                    </span>
+                    <h2
+                        class="font_Poppins font-[700] text-[60px] sm:text-[70px] lg:text-[90px] leading-[1.1] tracking-[10px] mb-[37px]"
+                        data-aos="fade-up"
+                        data-aos-duration="3000"
+                    >
+                        Pato Place
+                    </h2>
+                    <button
+                        class="font-[400] text-[12px] leading-[1.1] text-[#ec1d25] py-[10px] px-4 bg-white rounded-[10px]"
+                    >
+                        <a href="#!"> LOOK MENU </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#efefef] pt-[120px] pb-[105px]">
+            <div class="container">
+                <div class="flex flex-col sm:flex-row gap-[30px] sm:row items-center">
+                    <div class="col-sm-12 col-md-6 text-center">
+                        <span class="font_Courgette text-[30px] text-[#d61c22] leading-[1.2] font-[400]">
+                            Italian Restaurant
+                        </span>
+                        <h3
+                            class="font-[700] text-[50px] leading-[1.2] text-[#222222] tracking-[6px] mt-[5px] mb-[35px]"
+                        >
+                            WELCOME
+                        </h3>
+                        <p class="max-w-[513px] mx-auto mb-[22px] text-[15px] leading-[1.7] text-[#666666]">
+                            Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed
+                            imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.
+                        </p>
+                        <a href="#!" class="text-[12px] tracking-[1px] uppercase hover:text-[#ec1d25]"
+                            >Our Story
+                            <i class="fa-solid fa-arrow-right ml-[5px]"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <img
+                            src="https://preview.colorlib.com/theme/pato/images/our-story-01.jpg"
+                            alt=""
+                            class="max-w-full sm:max-w-[390px] rounded-[10px] mx-auto"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="bg-[url('https://preview.colorlib.com/theme/pato/images/bg-intro-01.jpg')] bg-center pt-[135px] pb-[158px] text-center"
+        >
+            <span class="font_Courgette text-[30px] text-[#d61c22] leading-[1.2] font-[400]"> Discover </span>
+            <h3 class="font_Poppins font-[700] text-[40px] sm:text-[50px] text-white uppercase tracking-[10px]">
+                Pato Place
+            </h3>
+        </div>
+        <div class="pt-[77px] pb-[133px] container">
+            <div class="row row-cols-sm-1 gap-[30px] sm:gap-0 row-cols-md-3">
+                <div class="col">
+                    <img
+                        src="https://preview.colorlib.com/theme/pato/images/intro-01.jpg"
+                        alt=""
+                        class="rounded-[10px]"
+                        data-aos="zoom-in"
+                    />
+                    <div class="pt-[35px]">
+                        <h4
+                            class="font_Poppins font-[500] text-[22px] text-[#333333] uppercase tracking-[3px] mb-[13px] hover:text-[#ec1d25]"
+                        >
+                            <a href="#!"> Romantic Restaurant </a>
+                        </h4>
+                        <p class="mb-[20px] text-[15px] leading-[1.7] text-[#666666]">
+                            Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
+                        </p>
+                        <a href="#!" class="text-[12px] tracking-[1px] uppercase hover:text-[#ec1d25]"
+                            >Learn More
+                            <i class="fa-solid fa-arrow-right ml-[5px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <img
+                        src="https://preview.colorlib.com/theme/pato/images/intro-02.jpg"
+                        alt=""
+                        class="rounded-[10px]"
+                        data-aos="zoom-in"
+                    />
+                    <div class="pt-[35px]">
+                        <h4
+                            class="font_Poppins font-[500] text-[22px] text-[#333333] uppercase tracking-[3px] mb-[13px] hover:text-[#ec1d25]"
+                        >
+                            <a href="#!"> Delicious Food </a>
+                        </h4>
+                        <p class="mb-[20px] text-[15px] leading-[1.7] text-[#666666]">
+                            Aliquam eget aliquam magna, quis posuere risus ac justo ipsum nibh urna
+                        </p>
+                        <a href="#!" class="text-[12px] tracking-[1px] uppercase hover:text-[#ec1d25]"
+                            >Learn More
+                            <i class="fa-solid fa-arrow-right ml-[5px]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <img
+                        src="https://preview.colorlib.com/theme/pato/images/intro-04.jpg"
+                        alt=""
+                        class="rounded-[10px]"
+                        data-aos="zoom-in"
+                    />
+                    <div class="pt-[35px]">
+                        <h4
+                            class="font_Poppins font-[500] text-[22px] text-[#333333] uppercase tracking-[3px] mb-[13px] hover:text-[#ec1d25]"
+                        >
+                            <a href="#!"> Red Wines You Love </a>
+                        </h4>
+                        <p class="mb-[20px] text-[15px] leading-[1.7] text-[#666666]">
+                            Sed ornare ligula eget tortor tempor, quis porta tellus dictum.
+                        </p>
+                        <a href="#!" class="text-[12px] tracking-[1px] uppercase hover:text-[#ec1d25]"
+                            >Learn More
+                            <i class="fa-solid fa-arrow-right ml-[5px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pt-[115px] pb-[120px] bg-[#f5f2ec]">
+            <div class="container text-center">
+                <span class="font_Courgette text-[30px] text-[#d61c22] leading-[1.2] font-[400]"> Discover </span>
+                <h3
+                    class="font_Poppins font-[700] text-[50px] text-[#222222] uppercase tracking-[10px] mt-[2px] mb-[22px]"
+                >
+                    Our Menu
+                </h3>
+                <div class="row">
+                    <div class="col-sm-12 col-md-8">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 relative">
+                                <img
+                                    src="https://preview.colorlib.com/theme/pato/images/our-menu-01.jpg"
+                                    alt=""
+                                    class="rounded-[10px] mt-[30px]"
+                                />
+                                <a
+                                    href="#!"
+                                    class="py-[14px] px-[20px] bg-white rounded-[10px] opacity-[0.9] uppercase font-[500] font_Poppins text-[22px] tracking-[3px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                >
+                                    Lunch
+                                </a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 relative">
+                                <img
+                                    src="https://preview.colorlib.com/theme/pato/images/our-menu-05.jpg"
+                                    alt=""
+                                    class="rounded-[10px] mt-[30px]"
+                                />
+                                <a
+                                    href="#!"
+                                    class="py-[14px] px-[20px] bg-white rounded-[10px] opacity-[0.9] uppercase font-[500] font_Poppins text-[22px] tracking-[3px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                                >
+                                    Dinner
+                                </a>
+                            </div>
+                            <div class="col-sm-12 relative">
+                                <img
+                                    src="https://preview.colorlib.com/theme/pato/images/our-menu-13.jpg"
+                                    alt=""
+                                    class="rounded-[10px] mt-[30px]"
+                                />
+                                <a
+                                    href="#!"
+                                    class="py-[14px] px-[20px] bg-white rounded-[10px] opacity-[0.9] uppercase font-[500] font_Poppins text-[14px] tracking-[3px] absolute top-1/2 left-1/2 -translate-x-1/2"
+                                >
+                                    Happy Hour
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="col-sm-12 relative">
+                            <img
+                                src="https://preview.colorlib.com/theme/pato/images/our-menu-08.jpg"
+                                alt=""
+                                class="rounded-[10px] mt-[30px]"
+                            />
+                            <a
+                                href="#!"
+                                class="py-[14px] px-[20px] bg-white rounded-[10px] opacity-[0.9] uppercase font-[500] font_Poppins text-[22px] tracking-[3px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                            >
+                                Drink
+                            </a>
+                        </div>
+                        <div class="col-sm-12 relative">
+                            <img
+                                src="https://preview.colorlib.com/theme/pato/images/our-menu-10.jpg"
+                                alt=""
+                                class="rounded-[10px] mt-[30px]"
+                            />
+                            <a
+                                href="#!"
+                                class="py-[14px] px-[20px] bg-white rounded-[10px] opacity-[0.9] uppercase font-[500] font_Poppins text-[22px] tracking-[3px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                            >
+                                Starters
+                            </a>
+                        </div>
+                        <div class="col-sm-12 relative">
+                            <img
+                                src="https://preview.colorlib.com/theme/pato/images/our-menu-16.jpg"
+                                alt=""
+                                class="rounded-[10px] mt-[30px]"
+                            />
+                            <a
+                                href="#!"
+                                class="py-[14px] px-[20px] bg-white rounded-[10px] opacity-[0.9] uppercase font-[500] font_Poppins text-[22px] tracking-[3px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                            >
+                                Dessert
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center relative">
+            <div class="absolute top-[60px] lg:top-[115px] left-1/2 -translate-x-1/2 z-10">
+                <span class="font_Courgette text-[30px] text-[#d61c22] leading-[1.2] font-[400]"> Upcomming </span>
+                <h3 class="font_Poppins font-[700] text-[50px] text-white uppercase tracking-[6px]">Events</h3>
+            </div>
+            <div class="autoplay">
+                <div class="relative">
+                    <img
+                        src="https://preview.colorlib.com/theme/pato/images/bg-event-01.jpg"
+                        alt=""
+                        class="h-[1000px] sm:h-[1200px] lg:h-[800px] object-cover"
+                    />
+                    <div
+                        class="absolute top-[450px] left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-0 lg:flex-row lg:gap-10 w-[90%] max-w-[1200px] bg-white rounded-[10px] overflow-hidden mt-[70px] sm:mt-[180px] lg:mt-0"
+                    >
+                        <div class="w-full lg:w-1/2 flex flex-col lg:flex-row">
+                            <div
+                                class="bg-[#cf2227] h-[50px] lg:h-full w-full lg:w-[50px] text-[12px] tracking-[1px] uppercase text-white flex items-center justify-center"
+                            >
+                                <span class="rotate-0 lg:rotate-90 whitespace-nowrap"
+                                    >08:00 PM TUESDAY - 21 NOVEMBER 2018</span
+                                >
+                            </div>
+
+                            <img
+                                src="https://preview.colorlib.com/theme/pato/images/event-02.jpg"
+                                alt="Event Image"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div
+                            class="w-full lg:w-1/2 flex flex-col justify-center items-center px-10 pt-[45px] pb-[30px] lg:px-0 lg:mx-[120px] text-center text-black"
+                        >
+                            <h3 class="text-[22px] font_Poppins font-[500] tracking-[3px] uppercase mb-3">
+                                Wines during specific nights
+                            </h3>
+                            <p class="text-[14px] text-gray-600 mb-10">
+                                Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed
+                                imperdiet lacinia.
+                            </p>
+                            <div id="countdown" class="flex gap-6 text-red-600 text-[32px] font-bold mb-10">
+                                <div>
+                                    <span>25</span>
+                                    <div class="text-xs text-gray-500">DAYS</div>
+                                </div>
+                                <div>
+                                    <span>11</span>
+                                    <div class="text-xs text-gray-500">HOURS</div>
+                                </div>
+                                <div>
+                                    <span>51</span>
+                                    <div class="text-xs text-gray-500">MINUTES</div>
+                                </div>
+                                <div>
+                                    <span>04</span>
+                                    <div class="text-xs text-gray-500">SECONDS</div>
+                                </div>
+                            </div>
+                            <a href="#!" class="text-[12px] tracking-[1px] uppercase"
+                                >View Details
+                                <i class="fa-solid fa-arrow-right ml-[5px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img
+                        src="https://preview.colorlib.com/theme/pato/images/bg-event-02.jpg"
+                        alt=""
+                        class="h-[1000px] sm:h-[1200px] lg:h-[800px] object-cover"
+                    />
+                    <div
+                        class="absolute top-[450px] left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-0 lg:flex-row lg:gap-10 w-[90%] max-w-[1200px] bg-white rounded-[10px] overflow-hidden mt-[70px] sm:mt-[180px] lg:mt-0"
+                    >
+                        <div class="w-full lg:w-1/2 flex flex-col lg:flex-row">
+                            <div
+                                class="bg-[#cf2227] h-[50px] lg:h-full w-full lg:w-[50px] text-[12px] tracking-[1px] uppercase text-white flex items-center justify-center"
+                            >
+                                <span class="rotate-0 lg:rotate-90 whitespace-nowrap"
+                                    >08:00 PM TUESDAY - 21 NOVEMBER 2018</span
+                                >
+                            </div>
+
+                            <img
+                                src="https://preview.colorlib.com/theme/pato/images/event-06.jpg"
+                                alt="Event Image"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div
+                            class="w-full lg:w-1/2 flex flex-col justify-center items-center px-10 pt-[45px] pb-[30px] lg:px-0 lg:mx-[120px] text-center text-black"
+                        >
+                            <h3 class="text-[22px] font_Poppins font-[500] tracking-[3px] uppercase mb-3">
+                                Wines during specific nights
+                            </h3>
+                            <p class="text-[14px] text-gray-600 mb-10">
+                                Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed
+                                imperdiet lacinia.
+                            </p>
+                            <div id="countdown" class="flex gap-6 text-red-600 text-[32px] font-bold mb-10">
+                                <div>
+                                    <span>25</span>
+                                    <div class="text-xs text-gray-500">DAYS</div>
+                                </div>
+                                <div>
+                                    <span>11</span>
+                                    <div class="text-xs text-gray-500">HOURS</div>
+                                </div>
+                                <div>
+                                    <span>51</span>
+                                    <div class="text-xs text-gray-500">MINUTES</div>
+                                </div>
+                                <div>
+                                    <span>04</span>
+                                    <div class="text-xs text-gray-500">SECONDS</div>
+                                </div>
+                            </div>
+                            <a href="#!" class="text-[12px] tracking-[1px] uppercase"
+                                >View Details
+                                <i class="fa-solid fa-arrow-right ml-[5px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img
+                        src="https://preview.colorlib.com/theme/pato/images/bg-event-04.jpg"
+                        alt=""
+                        class="h-[1000px] sm:h-[1200px] lg:h-[800px] object-cover"
+                    />
+                    <div
+                        class="absolute top-[450px] left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col gap-0 lg:flex-row lg:gap-10 w-[90%] max-w-[1200px] bg-white rounded-[10px] overflow-hidden mt-[70px] sm:mt-[180px] lg:mt-0"
+                    >
+                        <div class="w-full lg:w-1/2 flex flex-col lg:flex-row">
+                            <div
+                                class="bg-[#cf2227] h-[50px] lg:h-full w-full lg:w-[50px] text-[12px] tracking-[1px] uppercase text-white flex items-center justify-center"
+                            >
+                                <span class="rotate-0 lg:rotate-90 whitespace-nowrap"
+                                    >08:00 PM TUESDAY - 21 NOVEMBER 2018</span
+                                >
+                            </div>
+
+                            <img
+                                src="https://preview.colorlib.com/theme/pato/images/event-01.jpg"
+                                alt="Event Image"
+                                class="w-full h-full object-cover"
+                            />
+                        </div>
+                        <div
+                            class="w-full lg:w-1/2 flex flex-col justify-center items-center px-10 pt-[45px] pb-[30px] lg:px-0 lg:mx-[120px] text-center text-black"
+                        >
+                            <h3 class="text-[22px] font_Poppins font-[500] tracking-[3px] uppercase mb-3">
+                                Wines during specific nights
+                            </h3>
+                            <p class="text-[14px] text-gray-600 mb-10">
+                                Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed
+                                imperdiet lacinia.
+                            </p>
+                            <div id="countdown" class="flex gap-6 text-red-600 text-[32px] font-bold mb-10">
+                                <div>
+                                    <span>25</span>
+                                    <div class="text-xs text-gray-500">DAYS</div>
+                                </div>
+                                <div>
+                                    <span>11</span>
+                                    <div class="text-xs text-gray-500">HOURS</div>
+                                </div>
+                                <div>
+                                    <span>51</span>
+                                    <div class="text-xs text-gray-500">MINUTES</div>
+                                </div>
+                                <div>
+                                    <span>04</span>
+                                    <div class="text-xs text-gray-500">SECONDS</div>
+                                </div>
+                            </div>
+                            <a href="#!" class="text-[12px] tracking-[1px] uppercase"
+                                >View Details
+                                <i class="fa-solid fa-arrow-right ml-[5px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#f1f1f1] pt-[100px] pb-[110px]">
+            <div class="container">
+                <div class="row items-center gap-12 lg:gap-0">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                        <p class="font_Courgette text-[30px] text-[#d61c22] leading-[1.2] font-[400] text-center">
+                            Reservation
+                        </p>
+                        <h3
+                            class="font-[700] text-[48px] sm:text-[50px] leading-[1.2] text-[#222222] tracking-[6px] mt-[5px] mb-[35px] uppercase font_Poppins text-center"
+                        >
+                            Book table
+                        </h3>
+                        <form action="" autocomplete="off">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="" class="w-full">
+                                            Date
+                                            <input
+                                                type="date"
+                                                name=""
+                                                id=""
+                                                class="block rounded-[10px] text-[14px] text-[#666666] border-2 border-solid border-[#d9d9d9] w-full h-[50px] px-3 py-2 mt-[3px] mb-[23px]"
+                                            />
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="w-full">
+                                            Time
+                                            <div
+                                                class="rounded-[10px] text-[14px] text-[#666666] border-2 border-solid border-[#d9d9d9] w-full h-[50px] px-3 py-2 mt-[3px] mb-[23px]"
+                                            >
+                                                <select name="" id="" class="pl-2 pr-5 cursor-pointer">
+                                                    <option value="">9:00</option>
+                                                    <option value="">9:30</option>
+                                                    <option value="">10:00</option>
+                                                    <option value="">10:30</option>
+                                                    <option value="">11:00</option>
+                                                    <option value="">11:30</option>
+                                                    <option value="">12:00</option>
+                                                    <option value="">12:30</option>
+                                                    <option value="">13:00</option>
+                                                    <option value="">13:30</option>
+                                                    <option value="">14:00</option>
+                                                    <option value="">14:30</option>
+                                                    <option value="">15:00</option>
+                                                    <option value="">15:30</option>
+                                                    <option value="">14:00</option>
+                                                    <option value="">14:30</option>
+                                                    <option value="">15:00</option>
+                                                    <option value="">15:30</option>
+                                                    <option value="">16:00</option>
+                                                </select>
+                                            </div>
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="w-full">
+                                            People
+                                            <div
+                                                class="rounded-[10px] text-[14px] text-[#666666] border-2 border-solid border-[#d9d9d9] w-full h-[50px] px-3 py-2 mt-[3px] mb-[23px]"
+                                            >
+                                                <select name="" id="" class="pl-2 pr-5 cursor-pointer">
+                                                    <option value="">1 person</option>
+                                                    <option value="">2 people</option>
+                                                    <option value="">3 people</option>
+                                                    <option value="">4 people</option>
+                                                    <option value="">5 people</option>
+                                                    <option value="">6 people</option>
+                                                    <option value="">7 people</option>
+                                                    <option value="">8 people</option>
+                                                    <option value="">9 people</option>
+                                                    <option value="">10 people</option>
+                                                    <option value="">11 people</option>
+                                                    <option value="">12 people</option>
+                                                </select>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <div class="form-group">
+                                        <label for="" class="w-full">
+                                            Name
+                                            <input
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                placeholder="Name"
+                                                class="block rounded-[10px] text-[14px] text-[#666666] border-2 border-solid border-[#d9d9d9] w-full h-[50px] px-3 py-2 mt-[3px] mb-[23px]"
+                                                required
+                                            />
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="w-full">
+                                            Phone
+                                            <input
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                placeholder="Phone"
+                                                class="block rounded-[10px] text-[14px] text-[#666666] border-2 border-solid border-[#d9d9d9] w-full h-[50px] px-3 py-2 mt-[3px] mb-[23px]"
+                                                required
+                                            />
+                                        </label>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="w-full">
+                                            Email
+                                            <input
+                                                type="email"
+                                                name=""
+                                                id=""
+                                                placeholder="Email"
+                                                class="block rounded-[10px] text-[14px] text-[#666666] border-2 border-solid border-[#d9d9d9] w-full h-[50px] px-3 py-2 mt-[3px] mb-[23px]"
+                                                required
+                                            />
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full flex justify-center">
+                                <button class="btn-primary" type="submit">Book Table</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                        <img
+                            src="https://preview.colorlib.com/theme/pato/images/booking-01.jpg"
+                            alt=""
+                            class="rounded-[10px] max-w-full sm:max-w-[390px] mx-auto"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pt-[115px]">
+            <p class="font_Courgette text-[30px] text-[#d61c22] leading-[1.2] font-[400] text-center">Customers Say</p>
+            <h3
+                class="font-[700] text-[50px] leading-[1.2] text-[#222222] tracking-[11px] pt-[3px] uppercase font_Poppins text-center"
+            >
+                Review
+            </h3>
+            <div class="autoplay container">
+                <div class="pt-[50px] pb-[190px] !flex flex-col items-center">
+                    <img
+                        src="https://preview.colorlib.com/theme/pato/images/avatar-01.jpg"
+                        alt=""
+                        class="rounded-[50%] border-4 border-solid border-[#ec1d25] w-[118px] h-[118px]"
+                    />
+                    <div class="mt-[33px] text-center">
+                        <p class="max-w-[890px] text-[18px] text-[#666666] leading-[1.7]">
+                            “ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis
+                            in pre-tium nec, fermentum viverra dui ”
+                        </p>
+                        <div class="text-red-500 mt-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="mt-8 text-[14px] text-[#222222]">Marie Simmons ˗ New York</p>
+                    </div>
+                </div>
+                <div class="py-[50px] !flex flex-col items-center">
+                    <img
+                        src="	https://preview.colorlib.com/theme/pato/images/avatar-04.jpg"
+                        alt=""
+                        class="rounded-[50%] border-4 border-solid border-[#ec1d25] w-[118px] h-[118px]"
+                    />
+                    <div class="mt-[33px] text-center">
+                        <p class="max-w-[890px] text-[18px] text-[#666666] leading-[1.7]">
+                            “ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis
+                            in pre-tium nec, fermentum viverra dui ”
+                        </p>
+                        <div class="text-red-500 mt-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="mt-8 text-[14px] text-[#222222]">Marie Simmons ˗ New York</p>
+                    </div>
+                </div>
+                <div class="py-[50px] !flex flex-col items-center">
+                    <img
+                        src="https://preview.colorlib.com/theme/pato/images/avatar-05.jpg"
+                        alt=""
+                        class="rounded-[50%] border-4 border-solid border-[#ec1d25] w-[118px] h-[118px]"
+                    />
+                    <div class="mt-[33px] text-center">
+                        <p class="max-w-[890px] text-[18px] text-[#666666] leading-[1.7]">
+                            “ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis
+                            in pre-tium nec, fermentum viverra dui ”
+                        </p>
+                        <div class="text-red-500 mt-3">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="mt-8 text-[14px] text-[#222222]">Marie Simmons ˗ New York</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[url('https://preview.colorlib.com/theme/pato/images/bg-cover-video-02.jpg')] bg-top relative">
+            <div class="pt-[225px] pb-[250px] text-center">
+                <span class="font_Courgette text-[30px] text-[#d61c22] leading-[1.2] font-[400]"> Discover </span>
+                <h3 class="font_Poppins font-[700] text-[44px] sm:text-[50px] text-white uppercase tracking-[10px]">
+                    Our Video
+                </h3>
+                <button id="play-video" class="bg-white rounded-[50%] w-[70px] h-[70px] mt-[43px] mb-[33px]">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <div id="video-container" class="absolute inset-0 justify-center items-center hidden"></div>
+            </div>
+        </div>
+        <div class="pt-[115px] pb-[123px]">
+            <span class="font_Courgette text-[30px] text-[#d61c22] leading-[1.2] font-[400] block text-center"
+                >Latest News
+            </span>
+            <h3
+                class="font_Poppins font-[700] text-[50px] text-[#222222] uppercase tracking-[10px] mt-[2px] mb-[22px] text-center"
+            >
+                The Blog
+            </h3>
+            <div class="container">
+                <div class="row gap-[30px] sm:gap-0">
+                    <div class="col-sm-12 col-md-4">
+                        <a href="#!">
+                            <div class="relative">
+                                <img
+                                    src="https://preview.colorlib.com/theme/pato/images/blog-01.jpg"
+                                    alt=""
+                                    class="rounded-[10px]"
+                                    data-aos="zoom-in"
+                                />
+
+                                <span
+                                    class="absolute left-[14px] bottom-[11px] bg-[#00000080] py-[3px] px-[15px] text-[12px] text-white rounded-[4px]"
+                                >
+                                    21 Dec 2017
+                                </span>
+                            </div>
+                            <div class="pt-[35px]">
+                                <h4
+                                    class="font_Poppins text-[22px] text-[#333333] uppercase tracking-[3px] mb-[13px] hover:text-[#ec1d25]"
+                                >
+                                    Best Places for Wine
+                                </h4>
+                                <p class="mb-[14px] text-[15px] leading-[1.7] text-[#666]">
+                                    Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.
+                                </p>
+                                <a href="#!" class="text-[12px] tracking-[1px] uppercase hover:text-[#ec1d25]"
+                                    >Continue Reading
+                                    <i class="fa-solid fa-arrow-right ml-[5px]"></i>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <a href="#!">
+                            <div class="relative">
+                                <img
+                                    src="https://preview.colorlib.com/theme/pato/images/blog-02.jpg"
+                                    alt=""
+                                    class="rounded-[10px]"
+                                    data-aos="zoom-in"
+                                />
+
+                                <span
+                                    class="absolute left-[14px] bottom-[11px] bg-[#00000080] py-[3px] px-[15px] text-[12px] text-white rounded-[4px]"
+                                >
+                                    15 Dec 2017
+                                </span>
+                            </div>
+                            <div class="pt-[35px]">
+                                <h4
+                                    class="font_Poppins text-[22px] text-[#333333] uppercase tracking-[3px] mb-[13px] hover:text-[#ec1d25]"
+                                >
+                                    Eggs and Cheese
+                                </h4>
+                                <p class="mb-[14px] text-[15px] leading-[1.7] text-[#666]">
+                                    Duis elementum, risus sit amet lobortis nunc justo condimentum ligula, vitae feugiat
+                                </p>
+                                <a href="#!" class="text-[12px] tracking-[1px] uppercase hover:text-[#ec1d25]"
+                                    >Continue Reading
+                                    <i class="fa-solid fa-arrow-right ml-[5px]"></i>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <a href="#!">
+                            <div class="relative">
+                                <img
+                                    src="https://preview.colorlib.com/theme/pato/images/blog-03.jpg"
+                                    alt=""
+                                    class="rounded-[10px]"
+                                    data-aos="zoom-in"
+                                />
+
+                                <span
+                                    class="absolute left-[14px] bottom-[11px] bg-[#00000080] py-[3px] px-[15px] text-[12px] text-white rounded-[4px]"
+                                >
+                                    12 Dec 2017
+                                </span>
+                            </div>
+                            <div class="pt-[35px]">
+                                <h4
+                                    class="font_Poppins text-[22px] text-[#333333] uppercase tracking-[3px] mb-[13px] hover:text-[#ec1d25]"
+                                >
+                                    Style the Wedding Party
+                                </h4>
+                                <p class="mb-[14px] text-[15px] leading-[1.7] text-[#666]">
+                                    Sed ornare ligula eget tortor tempor, quis porta tellus dictum.
+                                </p>
+                                <a href="#!" class="text-[12px] tracking-[1px] uppercase hover:text-[#ec1d25]"
+                                    >Continue Reading
+                                    <i class="fa-solid fa-arrow-right ml-[5px]"></i>
+                                </a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#ededed] py-[85px] flex justify-center">
+            <form action="" autocomplete="off" class="flex flex-col lg:flex-row items-center">
+                <span class="m-[10px] font_Poppins font-[500] text-[22px] text-[#333] uppercase tracking-[3px]">
+                    Specials Sign up
+                </span>
+                <div
+                    class="form-group w-[270px] h-[50px] rounded-[10px] border-2 border-solid border-[#d9d9d9] m-[10px] text-[#666] text-[14px] bg-white flex items-center px-3"
+                >
+                    <input
+                        type="email"
+                        name=""
+                        id=""
+                        class="w-full rounded-[10px]"
+                        placeholder="Email Adrress"
+                        required
+                    />
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <button class="btn-primary m-[10px]" type="submit">Sign-up</button>
+            </form>
+        </div>
+        <footer class="text-[#999] text-[13px]">
+            <div class="pt-10 pb-[70px] bg-[#222222]">
+                <div class="container">
+                    <div class="row gap-[50px] sm:gap-0">
+                        <div class="col-sm-12 col-md-4">
+                            <div class="mb-[70px]">
+                                <h4
+                                    class="font_Poppins font-[500] text-[18px] text-white uppercase tracking-[2px] mb-[33px]"
+                                >
+                                    Contact Us
+                                </h4>
+                                <ul>
+                                    <li class="mb-[14px] flex gap-2 items-center">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        8th floor, 379 Hudson St, New York, NY 10018
+                                    </li>
+                                    <li class="mb-[14px] flex gap-2 items-center">
+                                        <i class="fa-solid fa-phone"></i>
+                                        (+1) 96 716 6879
+                                    </li>
+                                    <li class="mb-[14px] flex gap-2 items-center">
+                                        <i class="fa-solid fa-envelope"></i>
+                                        contact@site.com
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4
+                                    class="font_Poppins font-[500] text-[18px] text-white uppercase tracking-[2px] mb-[33px]"
+                                >
+                                    Opening Times
+                                </h4>
+                                <ul>
+                                    <li class="mb-[14px] flex gap-2 items-center">09:30 AM – 11:00 PM</li>
+                                    <li class="mb-[14px] flex gap-2 items-center">Every Day</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <h4
+                                class="font_Poppins font-[500] text-[18px] text-white uppercase tracking-[2px] mb-[33px]"
+                            >
+                                Latest twitter
+                            </h4>
+                            <div class="mb-[25px]">
+                                <div class="flex items-center gap-[5px]">
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <a href="#!" class="text-[13px] text-[#ec1d25] leading-[1.7]"> @colorlib </a>
+                                </div>
+                                <p class="text-[#999] leading-[1.7] mb-[18px]">
+                                    Activello is a good option. It has a slider built into that displays the featured
+                                    image in the slider.
+                                    <a href="#!" class="text-[#ec1d25]"> https://buff.ly/2zaSfAQ </a>
+                                </p>
+                                <span class="text-[12px] text-[#555]"> 21 Dec 2017 </span>
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-[5px]">
+                                    <i class="fa-brands fa-twitter"></i>
+                                    <a href="#!" class="text-[13px] text-[#ec1d25] leading-[1.7]"> @colorlib </a>
+                                </div>
+                                <p class="text-[#999] leading-[1.7] mb-[18px]">
+                                    Activello is a good option. It has a slider built into that displays
+                                    <a href="#!" class="text-[#ec1d25]"> https://buff.ly/2zaSfAQ </a>
+                                </p>
+                                <span class="text-[12px] text-[#555]"> 21 Dec 2017 </span>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <h4
+                                class="font_Poppins font-[500] text-[18px] text-white uppercase tracking-[2px] mb-[33px]"
+                            >
+                                Gallery
+                            </h4>
+                            <div class="flex flex-wrap gap-[10px]">
+                                <a
+                                    href="https://preview.colorlib.com/theme/pato/images/photo-gallery-01.jpg"
+                                    style="width: calc((100% - 30px) / 4)"
+                                >
+                                    <img
+                                        src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-01.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                                <a
+                                    href="https://preview.colorlib.com/theme/pato/images/photo-gallery-02.jpg"
+                                    style="width: calc((100% - 30px) / 4)"
+                                >
+                                    <img
+                                        src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-02.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                                <a
+                                    href="https://preview.colorlib.com/theme/pato/images/photo-gallery-03.jpg"
+                                    style="width: calc((100% - 30px) / 4)"
+                                >
+                                    <img
+                                        src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-03.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                                <a
+                                    href="https://preview.colorlib.com/theme/pato/images/photo-gallery-04.jpg"
+                                    style="width: calc((100% - 30px) / 4)"
+                                >
+                                    <img
+                                        src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-04.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                                <a
+                                    href="https://preview.colorlib.com/theme/pato/images/photo-gallery-05.jpg"
+                                    style="width: calc((100% - 30px) / 4)"
+                                >
+                                    <img
+                                        src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-05.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                                <a
+                                    href="https://preview.colorlib.com/theme/pato/images/photo-gallery-06.jpg"
+                                    style="width: calc((100% - 30px) / 4)"
+                                >
+                                    <img
+                                        src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-06.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                                <a
+                                    href="https://preview.colorlib.com/theme/pato/images/photo-gallery-07.jpg"
+                                    style="width: calc((100% - 30px) / 4)"
+                                >
+                                    <img
+                                        src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-07.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                                <a
+                                    href="https://preview.colorlib.com/theme/pato/images/photo-gallery-08.jpg"
+                                    style="width: calc((100% - 30px) / 4)"
+                                >
+                                    <img
+                                        src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-08.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                                <a
+                                    href="https://preview.colorlib.com/theme/pato/images/photo-gallery-09.jpg"
+                                    style="width: calc((100% - 30px) / 4)"
+                                >
+                                    <img
+                                        src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-09.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                                <a
+                                    href="https://preview.colorlib.com/theme/pato/images/photo-gallery-10.jpg"
+                                    style="width: calc((100% - 30px) / 4)"
+                                >
+                                    <img
+                                        src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-10.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                                <a
+                                    href="https://preview.colorlib.com/theme/pato/images/photo-gallery-11.jpg"
+                                    style="width: calc((100% - 30px) / 4)"
+                                >
+                                    <img
+                                        src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-11.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                                <a
+                                    href="https://preview.colorlib.com/theme/pato/images/photo-gallery-12.jpg"
+                                    style="width: calc((100% - 30px) / 4)"
+                                >
+                                    <img
+                                        src="https://preview.colorlib.com/theme/pato/images/photo-gallery-thumb-12.jpg"
+                                        alt=""
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#111111] py-[22px]">
+                <div class="container flex justify-between">
+                    <div class="text-white flex gap-[18px]">
+                        <a href="#!">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#!"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#!"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <p class="text-[14px] text-[#999] leading-[1.7]">
+                        @ 2017 Colorlib. <a href="#!" class="text-[#ccc]">Get The Theme</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <button
+            class="bg-[#b2b2b2] py-[6px] px-2 rounded-[4px] text-white hidden bottom-[40px] right-[40px] hover:bg-[#ec1d25]"
+            id="scroll"
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+        >
+            <i class="fa-solid fa-angles-up"></i>
+        </button>
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+            integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="./index.js"></script>
+    </body>
+</html>

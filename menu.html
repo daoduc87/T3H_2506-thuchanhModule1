@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en" class="font_Montserrat">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Menu-PATO</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+        <link rel="shortcut icon" href="./favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="./favicon/site.webmanifest" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+            integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+        />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./assets/styles/grid.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <header id="header"></header>
+        <script>
+            fetch('./template/header.html')
+                .then((response) => response.text())
+                .then((data) => {
+                    document.getElementById('header').innerHTML = data;
+                });
+        </script>
+        <section
+            class="bg-[url('https://preview.colorlib.com/theme/pato/images/bg-title-page-01.jpg')] bg-center min-h-[545px] flex items-center justify-center pt-[160px] pb-[80px]"
+        >
+            <h2 class="font_Poppins font-[700] text-[50px] text-white uppercase tracking-[6px] text-center">
+                Pato Menu
+            </h2>
+        </section>
+        <div class="bg-[#efefef] pt-[110px] pb-[70px]">
+            <div class="container">
+                <div class="row flex-col lg:flex-row gap-0 lg:!gap-[40px] lg:flex-nowrap">
+                    <div class="col-md-10 col-lg-10 col-xl-6 mx-auto">
+                        <div class="pb-[22px]">
+                            <h3
+                                class="font_Poppins font-[500] text-[24px] text-[#222] uppercase tracking-[3px] pb-[25px]"
+                            >
+                                STARTERS
+                            </h3>
+                            <div class="mb-[36px]">
+                                <div class="flex flex-col sm:flex-row gap-[10px] mb-[3px]">
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px]"
+                                        >Pine nut sbrisalona</a
+                                    >
+                                    <span class="text-[#b3b3b3] tracking-[4px] flex-1 hidden sm:block"
+                                        >................................</span
+                                    >
+                                    <span class="text-[22px] text-[#333] uppercase">$29.79</span>
+                                </div>
+                                <span class="text-[13px] text-[#666] leading-[1.7]">Sed fermentum eros vitae eros</span>
+                            </div>
+                            <div class="mb-[36px]">
+                                <div class="flex flex-col sm:flex-row gap-[10px] mb-[3px]">
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px]"
+                                        >Aenean eu</a
+                                    >
+                                    <span class="text-[#b3b3b3] tracking-[4px] flex-1 hidden sm:block"
+                                        >...............................................</span
+                                    >
+                                    <span class="text-[22px] text-[#333] uppercase">$19.35</span>
+                                </div>
+                                <span class="text-[13px] text-[#666] leading-[1.7]"
+                                    >Feugiat maximus neque pharetra</span
+                                >
+                            </div>
+                            <div class="mb-[36px]">
+                                <div class="flex flex-col sm:flex-row gap-[10px] mb-[3px]">
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px]"
+                                        >Sed feugiat</a
+                                    >
+                                    <span class="text-[#b3b3b3] tracking-[4px] flex-1 hidden sm:block"
+                                        >............................................</span
+                                    >
+                                    <span class="text-[22px] text-[#333] uppercase">$12.19</span>
+                                </div>
+                                <span class="text-[13px] text-[#666] leading-[1.7]"
+                                    >Proin lacinia nisl ut ultricies posuere nulla</span
+                                >
+                            </div>
+                            <div class="mb-[36px]">
+                                <div class="flex flex-col sm:flex-row gap-[10px] mb-[3px]">
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px]"
+                                        >Consectetur</a
+                                    >
+                                    <span class="text-[#b3b3b3] tracking-[4px] flex-1 hidden sm:block"
+                                        >..........................................</span
+                                    >
+                                    <span class="text-[22px] text-[#333] uppercase">$21.89</span>
+                                </div>
+                                <span class="text-[13px] text-[#666] leading-[1.7]">Etiam cursus facilisis tortor</span>
+                            </div>
+                        </div>
+                        <div class="pb-[22px]">
+                            <h3
+                                class="font_Poppins font-[500] text-[24px] text-[#222] uppercase tracking-[3px] pb-[25px]"
+                            >
+                                Drinks
+                            </h3>
+                            <div class="mb-[36px]">
+                                <div class="flex flex-col sm:flex-row gap-[10px] mb-[3px]">
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px]"
+                                        >Vivamus pretium</a
+                                    >
+                                    <span class="text-[#b3b3b3] tracking-[4px] flex-1 hidden sm:block"
+                                        >.....................................</span
+                                    >
+                                    <span class="text-[22px] text-[#333] uppercase">$29.79</span>
+                                </div>
+                                <span class="text-[13px] text-[#666] leading-[1.7]">Sed fermentum eros vitae eros</span>
+                            </div>
+                            <div class="mb-[36px]">
+                                <div class="flex flex-col sm:flex-row gap-[10px] mb-[3px]">
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px]"
+                                        >Duis pharetra ligula</a
+                                    >
+                                    <span class="text-[#b3b3b3] tracking-[4px] flex-1 hidden sm:block"
+                                        >...............................</span
+                                    >
+                                    <span class="text-[22px] text-[#333] uppercase">$19.35</span>
+                                </div>
+                                <span class="text-[13px] text-[#666] leading-[1.7]"
+                                    >Feugiat maximus neque pharetra</span
+                                >
+                            </div>
+                            <div class="mb-[36px]">
+                                <div class="flex flex-col sm:flex-row gap-[10px] mb-[3px]">
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px]"
+                                        >In eu dolor</a
+                                    >
+                                    <span class="text-[#b3b3b3] tracking-[4px] flex-1 hidden sm:block"
+                                        >............................................</span
+                                    >
+                                    <span class="text-[22px] text-[#333] uppercase">$53.34</span>
+                                </div>
+                                <span class="text-[13px] text-[#666] leading-[1.7]"
+                                    >Proin lacinia nisl ut ultricies posuere nulla</span
+                                >
+                            </div>
+                            <div class="mb-[36px]">
+                                <div class="flex flex-col sm:flex-row gap-[10px] mb-[3px]">
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px]"
+                                        >Feugiat maximus
+                                    </a>
+                                    <span class="text-[#b3b3b3] tracking-[4px] flex-1 hidden sm:block"
+                                        >......................................</span
+                                    >
+                                    <span class="text-[22px] text-[#333] uppercase">$62.45</span>
+                                </div>
+                                <span class="text-[13px] text-[#666] leading-[1.7]">Sed fermentum eros vitae eros</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-lg-10 col-xl-6 mx-auto">
+                        <div class="pb-[22px]">
+                            <h3
+                                class="font_Poppins font-[500] text-[24px] text-[#222] uppercase tracking-[3px] pb-[25px]"
+                            >
+                                Main
+                            </h3>
+                            <div class="mb-[36px]">
+                                <div class="flex flex-col sm:flex-row gap-[10px] mb-[3px]">
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px]"
+                                        >Duis sed aliquet</a
+                                    >
+                                    <span class="text-[#b3b3b3] tracking-[4px] flex-1 hidden sm:block"
+                                        >...................................</span
+                                    >
+                                    <span class="text-[22px] text-[#333] uppercase">$31.18</span>
+                                </div>
+                                <span class="text-[13px] text-[#666] leading-[1.7]"
+                                    >Proin lacinia nisl ut ultricies posuere nulla</span
+                                >
+                            </div>
+                            <div class="mb-[36px]">
+                                <div class="flex flex-col sm:flex-row gap-[10px] mb-[3px]">
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px]"
+                                        >Suspendisse</a
+                                    >
+                                    <span class="text-[#b3b3b3] tracking-[4px] flex-1 hidden sm:block"
+                                        >...............................................</span
+                                    >
+                                    <span class="text-[22px] text-[#333] uppercase">$70.25</span>
+                                </div>
+                                <span class="text-[13px] text-[#666] leading-[1.7]"
+                                    >Feugiat maximus neque pharetra</span
+                                >
+                            </div>
+                            <div class="mb-[36px]">
+                                <div class="flex flex-col sm:flex-row gap-[10px] mb-[3px]">
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px]"
+                                        >Scelerisque sed</a
+                                    >
+                                    <span class="text-[#b3b3b3] tracking-[4px] flex-1 hidden sm:block"
+                                        >.......................................</span
+                                    >
+                                    <span class="text-[22px] text-[#333] uppercase">$36.19</span>
+                                </div>
+                                <span class="text-[13px] text-[#666] leading-[1.7]">Etiam cursus facilisis tortor</span>
+                            </div>
+                            <div class="mb-[36px]">
+                                <div class="flex flex-col sm:flex-row gap-[10px] mb-[3px]">
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px]"
+                                        >Mollis nulla</a
+                                    >
+                                    <span class="text-[#b3b3b3] tracking-[4px] flex-1 hidden sm:block"
+                                        >..........................................</span
+                                    >
+                                    <span class="text-[22px] text-[#333] uppercase"> $19.50</span>
+                                </div>
+                                <span class="text-[13px] text-[#666] leading-[1.7]"
+                                    >Proin lacinia nisl ut ultricies posuere nulla</span
+                                >
+                            </div>
+                            <div class="mb-[36px]">
+                                <div class="flex flex-col sm:flex-row gap-[10px] mb-[3px]">
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px]"
+                                        >Convallis augue</a
+                                    >
+                                    <span class="text-[#b3b3b3] tracking-[4px] flex-1 hidden sm:block"
+                                        >......................................</span
+                                    >
+                                    <span class="text-[22px] text-[#333] uppercase"> $29.15</span>
+                                </div>
+                                <span class="text-[13px] text-[#666] leading-[1.7]">Sed fermentum eros vitae eros</span>
+                            </div>
+                            <div class="mb-[36px]">
+                                <div class="flex flex-col sm:flex-row gap-[10px] mb-[3px]">
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px]"
+                                        >Maecenas tristique</a
+                                    >
+                                    <span class="text-[#b3b3b3] tracking-[4px] flex-1 hidden sm:block"
+                                        >.................................</span
+                                    >
+                                    <span class="text-[22px] text-[#333] uppercase"> $29.79</span>
+                                </div>
+                                <span class="text-[13px] text-[#666] leading-[1.7]"
+                                    >Feugiat maximus neque pharetra</span
+                                >
+                            </div>
+                            <div class="mb-[36px]">
+                                <div class="flex flex-col sm:flex-row gap-[10px] mb-[3px]">
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px]"
+                                        >Duis tincidunt</a
+                                    >
+                                    <span class="text-[#b3b3b3] tracking-[4px] flex-1 hidden sm:block"
+                                        >........................................</span
+                                    >
+                                    <span class="text-[22px] text-[#333] uppercase"> $19.35</span>
+                                </div>
+                                <span class="text-[13px] text-[#666] leading-[1.7]"
+                                    >Proin lacinia nisl ut ultricies posuere nulla</span
+                                >
+                            </div>
+                        </div>
+                        <div class="pb-[22px]">
+                            <h3
+                                class="font_Poppins font-[500] text-[24px] text-[#222] uppercase tracking-[3px] pb-[25px]"
+                            >
+                                Dessert
+                            </h3>
+                            <div class="mb-[36px]">
+                                <div class="flex flex-col sm:flex-row gap-[10px] mb-[3px]">
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px]"
+                                        >tempus aliquet</a
+                                    >
+                                    <span class="text-[#b3b3b3] tracking-[4px] flex-1 hidden sm:block"
+                                        >.......................................</span
+                                    >
+                                    <span class="text-[22px] text-[#333] uppercase">$9.79</span>
+                                </div>
+                                <span class="text-[13px] text-[#666] leading-[1.7]"
+                                    >Proin lacinia nisl ut ultricies posuere nulla</span
+                                >
+                            </div>
+                            <div class="mb-[36px]">
+                                <div class="flex flex-col sm:flex-row gap-[10px] mb-[3px]">
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px]"
+                                        >scelerisque</a
+                                    >
+                                    <span class="text-[#b3b3b3] tracking-[4px] flex-1 hidden sm:block"
+                                        >............................................</span
+                                    >
+                                    <span class="text-[22px] text-[#333] uppercase">$19.35</span>
+                                </div>
+                                <span class="text-[13px] text-[#666] leading-[1.7]">Sed fermentum eros vitae eros</span>
+                            </div>
+                            <div class="mb-[36px]">
+                                <div class="flex flex-col sm:flex-row gap-[10px] mb-[3px]">
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px]"
+                                        >Cras maximus</a
+                                    >
+                                    <span class="text-[#b3b3b3] tracking-[4px] flex-1 hidden sm:block"
+                                        >..........................................</span
+                                    >
+                                    <span class="text-[22px] text-[#333] uppercase">$5.79</span>
+                                </div>
+                                <span class="text-[13px] text-[#666] leading-[1.7]"
+                                    >Duis pharetra ligula at urna dignissim</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="bg-[url('https://preview.colorlib.com/theme/pato/images/header-menu-01.jpg')] bg-center pt-[170px] pb-[165px] text-center"
+        >
+            <h3 class="font_Poppins font-[700] text-[40px] sm:text-[50px] text-white uppercase tracking-[10px]">
+                Lunch
+            </h3>
+        </div>
+        <div class="pt-[108px] pb-[70px]">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-10 col-xl-6 mx-auto">
+                        <a href="#!">
+                            <div class="flex flex-col sm:flex-row sm:items-center gap-7 mb-[30px]">
+                                <img
+                                    src="https://preview.colorlib.com/theme/pato/images/lunch-01.jpg"
+                                    alt=""
+                                    class="w-[160px] rounded-[10px]"
+                                    data-aos="zoom-in"
+                                />
+                                <div>
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px] mb-[3px]"
+                                    >
+                                        Sed varius
+                                    </a>
+                                    <span class="text-[13px] text-[#666] leading-[1.7] block">
+                                        Aenean pharetra tortor dui in pellentesque
+                                    </span>
+                                    <span class="text-[22px] text-[#333] uppercase mt-[20px] block">$29.79</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#!">
+                            <div class="flex flex-col sm:flex-row sm:items-center gap-7 mb-[30px]">
+                                <img
+                                    src="https://preview.colorlib.com/theme/pato/images/lunch-03.jpg"
+                                    alt=""
+                                    class="w-[160px] rounded-[10px]"
+                                    data-aos="zoom-in"
+                                />
+                                <div>
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px] mb-[3px]"
+                                    >
+                                        tempus aliquet
+                                    </a>
+                                    <span class="text-[13px] text-[#666] leading-[1.7] block">
+                                        Aenean condimentum ante erat
+                                    </span>
+                                    <span class="text-[22px] text-[#333] uppercase mt-[20px] block">$45.09</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#!">
+                            <div class="flex flex-col sm:flex-row sm:items-center gap-7 mb-[30px]">
+                                <img
+                                    src="https://preview.colorlib.com/theme/pato/images/lunch-05.jpg"
+                                    alt=""
+                                    class="w-[160px] rounded-[10px]"
+                                    data-aos="zoom-in"
+                                />
+                                <div>
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px] mb-[3px]"
+                                    >
+                                        Duis massa
+                                    </a>
+                                    <span class="text-[13px] text-[#666] leading-[1.7] block">
+                                        Proin lacinia nisl ut ultricies posuere nulla
+                                    </span>
+                                    <span class="text-[22px] text-[#333] uppercase mt-[20px] block">$12.75</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-10 col-lg-10 col-xl-6 mx-auto">
+                        <a href="#!">
+                            <div class="flex flex-col sm:flex-row sm:items-center gap-7 mb-[30px]">
+                                <img
+                                    src="https://preview.colorlib.com/theme/pato/images/lunch-02.jpg"
+                                    alt=""
+                                    class="w-[160px] rounded-[10px]"
+                                    data-aos="zoom-in"
+                                />
+                                <div>
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px] mb-[3px]"
+                                    >
+                                        sbrisalona
+                                    </a>
+                                    <span class="text-[13px] text-[#666] leading-[1.7] block">
+                                        Proin lacinia nisl ut ultricies posuere nullallentesque
+                                    </span>
+                                    <span class="text-[22px] text-[#333] uppercase mt-[20px] block">$29.79</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#!">
+                            <div class="flex flex-col sm:flex-row sm:items-center gap-7 mb-[30px]">
+                                <img
+                                    src="https://preview.colorlib.com/theme/pato/images/lunch-04.jpg"
+                                    alt=""
+                                    class="w-[160px] rounded-[10px]"
+                                    data-aos="zoom-in"
+                                />
+                                <div>
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px] mb-[3px]"
+                                    >
+                                        Cras eget magna
+                                    </a>
+                                    <span class="text-[13px] text-[#666] leading-[1.7] block">
+                                        Sed fermentum eros vitae eros
+                                    </span>
+                                    <span class="text-[22px] text-[#333] uppercase mt-[20px] block">$45.09</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#!">
+                            <div class="flex flex-col sm:flex-row sm:items-center gap-7 mb-[30px]">
+                                <img
+                                    src="https://preview.colorlib.com/theme/pato/images/lunch-06.jpg"
+                                    alt=""
+                                    class="w-[160px] rounded-[10px]"
+                                    data-aos="zoom-in"
+                                />
+                                <div>
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px] mb-[3px]"
+                                    >
+                                        Nullam maximus
+                                    </a>
+                                    <span class="text-[13px] text-[#666] leading-[1.7] block">
+                                        Duis massa nibh porttitor nec imperdiet eget
+                                    </span>
+                                    <span class="text-[22px] text-[#333] uppercase mt-[20px] block">$12.75</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="bg-[url('https://preview.colorlib.com/theme/pato/images/header-menu-02.jpg')] bg-center bg-cover brightness-50 pt-[170px] pb-[165px] text-center"
+        >
+            <h3 class="font_Poppins font-[700] text-[40px] sm:text-[50px] text-white uppercase tracking-[10px]">
+                Dinner
+            </h3>
+        </div>
+        <div class="pt-[108px] pb-[70px]">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-10 col-xl-6 mx-auto">
+                        <a href="#!">
+                            <div class="flex flex-col sm:flex-row sm:items-center gap-7 mb-[30px]">
+                                <img
+                                    src="https://preview.colorlib.com/theme/pato/images/dinner-01.jpg"
+                                    alt=""
+                                    class="w-[160px] rounded-[10px]"
+                                    data-aos="zoom-in"
+                                />
+                                <div>
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px] mb-[3px]"
+                                    >
+                                        Maecenas tristique
+                                    </a>
+                                    <span class="text-[13px] text-[#666] leading-[1.7] block">
+                                        Aenean pharetra tortor dui in pellentesque
+                                    </span>
+                                    <span class="text-[22px] text-[#333] uppercase mt-[20px] block">$29.79</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#!">
+                            <div class="flex flex-col sm:flex-row sm:items-center gap-7 mb-[30px]">
+                                <img
+                                    src="https://preview.colorlib.com/theme/pato/images/dinner-03.jpg"
+                                    alt=""
+                                    class="w-[160px] rounded-[10px]"
+                                    data-aos="zoom-in"
+                                />
+                                <div>
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px] mb-[3px]"
+                                    >
+                                        Pine nut sbrisalona
+                                    </a>
+                                    <span class="text-[13px] text-[#666] leading-[1.7] block">
+                                        Aenean condimentum ante erat
+                                    </span>
+                                    <span class="text-[22px] text-[#333] uppercase mt-[20px] block">$45.09</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#!">
+                            <div class="flex flex-col sm:flex-row sm:items-center gap-7 mb-[30px]">
+                                <img
+                                    src="https://preview.colorlib.com/theme/pato/images/dinner-05.jpg"
+                                    alt=""
+                                    class="w-[160px] rounded-[10px]"
+                                    data-aos="zoom-in"
+                                />
+                                <div>
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px] mb-[3px]"
+                                    >
+                                        Suspendisse eu
+                                    </a>
+                                    <span class="text-[13px] text-[#666] leading-[1.7] block">
+                                        Proin lacinia nisl ut ultricies posuere nulla
+                                    </span>
+                                    <span class="text-[22px] text-[#333] uppercase mt-[20px] block">$12.75</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-10 col-lg-10 col-xl-6 mx-auto">
+                        <a href="#!">
+                            <div class="flex flex-col sm:flex-row sm:items-center gap-7 mb-[30px]">
+                                <img
+                                    src="https://preview.colorlib.com/theme/pato/images/dinner-02.jpg"
+                                    alt=""
+                                    class="w-[160px] rounded-[10px]"
+                                    data-aos="zoom-in"
+                                />
+                                <div>
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px] mb-[3px]"
+                                    >
+                                        Cras maximus
+                                    </a>
+                                    <span class="text-[13px] text-[#666] leading-[1.7] block">
+                                        Proin lacinia nisl ut ultricies posuere nulla
+                                    </span>
+                                    <span class="text-[22px] text-[#333] uppercase mt-[20px] block">$29.79</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#!">
+                            <div class="flex flex-col sm:flex-row sm:items-center gap-7 mb-[30px]">
+                                <img
+                                    src="https://preview.colorlib.com/theme/pato/images/dinner-04.jpg"
+                                    alt=""
+                                    class="w-[160px] rounded-[10px]"
+                                    data-aos="zoom-in"
+                                />
+                                <div>
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px] mb-[3px]"
+                                    >
+                                        Pine nut sbrisalona
+                                    </a>
+                                    <span class="text-[13px] text-[#666] leading-[1.7] block">
+                                        Sed fermentum eros vitae eros
+                                    </span>
+                                    <span class="text-[22px] text-[#333] uppercase mt-[20px] block">$45.09</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#!">
+                            <div class="flex flex-col sm:flex-row sm:items-center gap-7 mb-[30px]">
+                                <img
+                                    src="https://preview.colorlib.com/theme/pato/images/dinner-06.jpg"
+                                    alt=""
+                                    class="w-[160px] rounded-[10px]"
+                                    data-aos="zoom-in"
+                                />
+                                <div>
+                                    <a
+                                        href="#!"
+                                        class="font_Poppins font-[300] text-[18px] text-[#333] leading-[1.4] uppercase tracking-[2px] mb-[3px]"
+                                    >
+                                        Tempor malesuada
+                                    </a>
+                                    <span class="text-[13px] text-[#666] leading-[1.7] block">
+                                        Duis massa nibh porttitor nec imperdiet eget
+                                    </span>
+                                    <span class="text-[22px] text-[#333] uppercase mt-[20px] block">$12.75</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#ededed] py-[85px] flex justify-center">
+            <form action="" autocomplete="off" class="flex flex-col lg:flex-row items-center">
+                <span class="m-[10px] font_Poppins font-[500] text-[22px] text-[#333] uppercase tracking-[3px]">
+                    Specials Sign up
+                </span>
+                <div
+                    class="form-group w-[270px] h-[50px] rounded-[10px] border-2 border-solid border-[#d9d9d9] m-[10px] text-[#666] text-[14px] bg-white flex items-center px-3"
+                >
+                    <input
+                        type="email"
+                        name=""
+                        id=""
+                        class="w-full rounded-[10px]"
+                        placeholder="Email Adrress"
+                        required
+                    />
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <button class="btn-primary m-[10px]" type="submit">Sign-up</button>
+            </form>
+        </div>
+        <footer id="footer"></footer>
+        <script>
+            fetch('./template/footer.html')
+                .then((response) => response.text())
+                .then((data) => {
+                    document.getElementById('footer').innerHTML = data;
+                    const scroll = document.getElementById('scroll');
+                    window.addEventListener('scroll', () => {
+                        const scrollTop = document.documentElement.scrollTop;
+                        if (scrollTop > 300) {
+                            scroll.classList.remove('hidden');
+                            scroll.classList.add('fixed');
+                        } else {
+                            scroll.classList.remove('fixed');
+                            scroll.classList.add('hidden');
+                        }
+                    });
+                });
+        </script>
+        <button
+            class="bg-[#b2b2b2] py-[6px] px-2 rounded-[4px] text-white hidden bottom-[40px] right-[40px] hover:bg-[#ec1d25]"
+            id="scroll"
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+        >
+            <i class="fa-solid fa-angles-up"></i>
+        </button>
+
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+            integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="./index.js"></script>
+    </body>
+</html>
