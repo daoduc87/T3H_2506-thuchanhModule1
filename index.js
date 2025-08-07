@@ -76,8 +76,6 @@ button.addEventListener('click', () => {
     videoContainer.innerHTML = `
     <div class="relative">
     <iframe width="853" height="480" src="https://www.youtube.com/embed/3Njxv_D3MEQ?si=w8auIxrUcwi5LKF2" class="w-full sm:w-[760px] sm:h-[480px] lg:w-[850px] lg:h-[480px] sm:aspect-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    title="YouTube video player" frameborder="0"
-    allow="autoplay; encrypted-media" allowfullscreen></iframe>
     <button id="close-video" class="absolute top-[-20px] right-[-20px] text-white text-2xl">
     <i class="fa-solid fa-xmark"></i>
     </button>
